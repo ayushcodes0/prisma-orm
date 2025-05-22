@@ -19,7 +19,7 @@ async function insertUser(email: string, password: string, firstName: string, la
     console.log(res);
 }
 
-insertUser("ayush@123.com", "123", "Ayush", "Singh");
+insertUser("ayush3@123.com", "123", "Ayush", "Singh");
 
 async function updateUser(email: string, newFirstName: string){
     const res = await prisma.user.update({
@@ -34,7 +34,7 @@ async function updateUser(email: string, newFirstName: string){
     })
     console.log(res)
 }
-updateUser("ayush@123.com", "Utkarsh");
+// updateUser("ayush@123.com", "Utkarsh");
 
 async function deleteUser(email: string){
     const res = await prisma.user.delete({
@@ -43,4 +43,4 @@ async function deleteUser(email: string){
     console.log(res);
 }
 
-deleteUser("ayush@123.com");
+// deleteUser("ayush@123.com");

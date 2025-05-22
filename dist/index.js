@@ -29,7 +29,7 @@ function insertUser(email, password, firstName, lastName) {
         console.log(res);
     });
 }
-// insertUser("ayush@123.com", "123", "Ayush", "Singh");
+insertUser("ayush3@123.com", "123", "Ayush", "Singh");
 function updateUser(email, newFirstName) {
     return __awaiter(this, void 0, void 0, function* () {
         const res = yield prisma.user.update({
@@ -45,7 +45,7 @@ function updateUser(email, newFirstName) {
         console.log(res);
     });
 }
-updateUser("ayush@123.com", "Utkarsh");
+// updateUser("ayush@123.com", "Utkarsh");
 function deleteUser(email) {
     return __awaiter(this, void 0, void 0, function* () {
         const res = yield prisma.user.delete({
