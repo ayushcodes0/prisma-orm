@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@prisma/client": "^6.8.2",
     "@types/node": "^22.15.19",
     "prisma": "^6.8.2",
     "ts-node": "^10.9.2",
